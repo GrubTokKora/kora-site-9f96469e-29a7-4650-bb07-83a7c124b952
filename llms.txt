@@ -1,19 +1,6 @@
-# Flavors Kitchen + Bar
+# Flavors Kitchen and Bar
 
-> Flavors Kitchen + Bar is a forthcoming world-cuisine restaurant in Bedford, NY, with a wood-fired pizza program, shareable world plates and a craft cocktail bar. Opening soon.
-
-## Menu
-The menu is still being written and has not been published. Planned: wood-fired, long-fermented pizza; shareable plates from cuisines around the world; small plates; craft cocktails.
+> Flavors Kitchen and Bar is a dining establishment located at 720 N Bedford Rd.
 
 ## Location & Contact
-- Address: 720 N Bedford Rd, Bedford, NY 10506, US
-- Phone: Coming soon
-- Contact: [Online contact form](visit.html#contact-form)
-
-## Hours
-- To be announced
-
-## Action Links
-- [Get the opening date](index.html#notify)
-- [Menu preview](menu.html)
-- [Visit & contact](visit.html)
+- Address: 720 N Bedford Rd
