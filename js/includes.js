@@ -6,9 +6,9 @@
   const ADDRESS_1 = "720 N Bedford Rd";
   const ADDRESS_2 = "Bedford, NY 10506";
   const MAPS = "https://www.google.com/maps/search/?api=1&query=720+N+Bedford+Rd%2C+Bedford%2C+NY+10506";
-  const PHONE = "";          // e.g. "9145550100" once assigned
-  const PHONE_DISPLAY = "";  // e.g. "(914) 555-0100"
-  const EMAIL = "";
+  const PHONE = "9148642992";          // e.g. "9145550100" once assigned
+  const PHONE_DISPLAY = "914-864-2992";  // e.g. "(914) 555-0100"
+  const EMAIL = "info@flavorsny.com";
   const INSTAGRAM = "";
   const ORDER = "";          // online ordering link, once live
   const HOURS = [];          // e.g. [["Tue – Thu", "5 – 10 pm"], ...]
@@ -126,6 +126,7 @@ ${fullNav(page).map((l) => l.replace("<a ", '<a class="mobile-nav-link" ')).join
   <dl class="visit-info visit-info--dark">
     <div class="visit-row"><dt>Address</dt><dd><a href="${MAPS}" target="_blank" rel="noopener noreferrer">${ADDRESS_1}<br/>${ADDRESS_2}</a></dd></div>
     <div class="visit-row"><dt>Phone</dt><dd>${PHONE ? `<a href="tel:${PHONE}">${PHONE_DISPLAY}</a>` : '<span class="tba">Coming soon</span>'}</dd></div>
+    ${EMAIL ? `<div class="visit-row"><dt>Email</dt><dd><a href="mailto:${EMAIL}">${EMAIL}</a></dd></div>` : ""}
     <div class="visit-row"><dt>Hours</dt><dd>${hoursHtml()}</dd></div>
   </dl>
   <div class="footer-notify">
@@ -145,11 +146,12 @@ ${fullNav(page).map((l) => l.replace("<a ", '<a class="mobile-nav-link" ')).join
     koraBranding.forEach((node) => el.appendChild(node));
   }
 
-  // Fill any in-page [data-visit] block with the same details the footer uses
+// Fill any in-page [data-visit] block with the same details the footer uses
   function mountVisit(el) {
     el.innerHTML = `
 <div class="visit-row"><dt>Address</dt><dd><a href="${MAPS}" target="_blank" rel="noopener noreferrer">${ADDRESS_1}<br/>${ADDRESS_2}</a></dd></div>
 <div class="visit-row"><dt>Phone</dt><dd>${PHONE ? `<a href="tel:${PHONE}">${PHONE_DISPLAY}</a>` : '<span class="tba">Coming soon</span>'}</dd></div>
+${EMAIL ? `<div class="visit-row"><dt>Email</dt><dd><a href="mailto:${EMAIL}">${EMAIL}</a></dd></div>` : ""}
 <div class="visit-row"><dt>Hours</dt><dd>${hoursHtml()}</dd></div>`;
   }
 
